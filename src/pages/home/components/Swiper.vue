@@ -1,12 +1,12 @@
 <template>
-<div class="wrapper">
-  <swiper :options="swiperOption">
-    <swiper-slide v-for="item of swiperList" :key="item.id">
-      <img class="swiper-img" :src="item.imgUrl" alt="去哪儿门票">
-    </swiper-slide>
-    <div class="swiper-pagination" slot="pagination"></div>
-  </swiper>
-</div>
+  <div class="wrapper">
+    <swiper :options="swiperOption">
+      <swiper-slide v-for="item of swiperList" :key="item.id">
+        <img class="swiper-img" :src="item.imgUrl" alt="去哪儿门票">
+      </swiper-slide>
+      <div class="swiper-pagination" slot="pagination"></div>
+    </swiper>
+  </div>
 </template>
 
 <script>
@@ -31,15 +31,15 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-  .wrapper >>> .swiper-pagination-bullet-active
-    background #fff
-  .wrapper
-    overflow hidden
-    // height 26.7vw
-    width 100%
-    // 高度设为0，以padding填充，防止轮播图下方内容因网络原因抖动
-    height 0
-    padding-bottom 26.7%
-    .swiper-img
-      width 100%
+.wrapper >>> .swiper-pagination-bullet-active
+  background: #fff
+.wrapper
+  overflow: hidden
+  // height 26.7vw
+  width: 100%
+  // 高度设为0，以padding填充，防止轮播图下方内容因网络原因抖动
+  height: 0
+  padding-bottom: 26.7%
+  .swiper-img
+    width: 100%
 </style>
