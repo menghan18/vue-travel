@@ -27,6 +27,7 @@ export default {
     }
   },
   computed: {
+    // 将接受的数据进行分页
     pages () {
       const pages = []
       this.list.forEach((item, index) => {
